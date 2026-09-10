@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+@custom-variant high-contrast (&:where(.high-contrast, .high-contrast *));
+
+/* Keep the contrast preference readable across the site's existing color utilities. */
+.high-contrast {
+    color-scheme: dark;
+}
+
+.high-contrast body {
+    background-color: #000;
+    color: #fff;
+}
+
+.high-contrast header,
+.high-contrast [class*="bg-blue-"],
+.high-contrast [class*="bg-slate-"],
+.high-contrast [class*="bg-purple-"] {
+    background-color: #000;
+    color: #fff;
+}
+
+.high-contrast [class*="text-slate-"],
+.high-contrast [class*="text-blue-"],
+.high-contrast [class*="text-purple-"],
+.high-contrast [class*="text-yellow-"] {
+    color: #fff;
+}
+
+.high-contrast [class*="border-"] {
+    border-color: #fff;
+}
+
+.high-contrast a,
+.high-contrast button {
+    text-decoration-thickness: 0.15em;
+}

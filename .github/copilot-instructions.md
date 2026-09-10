@@ -11,6 +11,8 @@ This is a crowdfunding platform for games with a developer theme. The applicatio
 - Do not generate summary markdown files upon completion of a task
 - Always use absolute paths when running scripts and BASH commands
 - **NEVER commit or push to main automatically unless explicitly instructed to do so**
+- Every exported function should have a TSDoc comment describing its purpose, parameters, and return value.
+- Before imports or any code, add a comment block to the file that explains its purpose.
 
 ## Code standards
 
